@@ -6,9 +6,9 @@ on:
       - main
 
 env:
-  AZURE_WEBAPP_NAME: actions7201
+  AZURE_WEBAPP_NAME: actions7201a
   AZURE_WEBAPP_PATH: '.'
-  DOTNET_VERSION: '2.2'
+  DOTNET_VERSION: '2.2.101'
 
 jobs:
   build-and-deploy:
