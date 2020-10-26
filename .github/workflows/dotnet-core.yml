@@ -1,4 +1,4 @@
-name: Deploy ASP.NET Core
+name: Deploy ASP.NET CORE
 
 on:
   push:
@@ -6,9 +6,9 @@ on:
       - master
 
 env:
-  AZURE_WEBAPP_NAME: az400actionsapp
+  AZURE_WEBAPP_NAME: csweb0619202
   AZURE_WEBAPP_PATH: '.'
-  DOTNET_VERSION: '3.1.401'
+  DOTNET_VERSION: '2.2.101'
 
 jobs:
   build-and-deploy:
@@ -22,7 +22,7 @@ jobs:
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Setup .NET Core
+      - name: SETUP .NET CORE
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
